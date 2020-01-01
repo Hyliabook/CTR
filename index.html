@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url("flag.gif");
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <object data="psn.svg" type="image/svg+xml"></object>
+
+        <script>
+        window.onload = function(){
+            let titleMusic = new Audio("title.mp3");
+            titleMusic.loop = false;
+            titleMusic.play();
+
+            titleMusic.onended = function(){
+                let menuMusic = new Audio("menu.mp3");
+                menuMusic.loop = true;
+                menuMusic.play();
+            }
+        }
+
+        </script>
+
+    </body>
+
+</html>
